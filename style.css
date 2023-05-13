@@ -1,0 +1,351 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* mobile version */
+
+body {
+	background-image: linear-gradient(rgba(18,23,37,0.85), rgba(18,23,37,0.85)), url("./assets/mobile/image-host.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Chivo';
+}
+
+.wrongEmail {
+	display: none ;
+	color: #FB3E3E;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14.28px;
+	position: relative;
+	margin-top: 8px;
+	margin-left: 0;
+}
+
+.validEmail {
+	display: none;
+	color:#54E6AF;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14.28px;
+	position: relative;
+	margin-top: 8px;
+}
+
+h1 {
+	margin-top: 57px;
+	color: #54E6AF;
+}
+
+h2 {
+	color:#FFFFFF;
+}
+
+.heading {
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-weight: 100;
+	font-size: 26px;
+	line-height: 38px;
+}
+
+p {
+	margin-top: 16px;
+	width: 327px;
+	font-weight: 100;
+	font-size: 15px;
+	line-height: 25px;
+	color: #C2CBE5;
+	text-align: center;
+}
+
+.podcastLogoes {
+	margin-top: 33px;
+	width: 315px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.spotifyLogo, .appleLogo {
+	height: 17px;
+}
+
+.googleLogo {
+	height: 11px;
+}
+
+.pocketLogo {
+	height: 15px;
+}
+
+input {
+	margin-top: 46px;
+	width: 295px;
+	height: 46px;
+	border-radius: 28px;
+	padding: 0;
+	border: 0;
+	background-color: #2C344B;
+	padding-left: 32px;
+}
+
+input::placeholder, input[type="email"] {
+	color: #FFFFFF;
+	font-family: chivo;
+	opacity: 0.5;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+input[type="email"] {
+	opacity: 1;
+}
+
+button {
+	margin-top: 16px;
+	width: 326px;
+	height: 46px;
+	border-radius: 28px;
+	background-color: #54E6AF;
+	box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+	padding: 0;
+	border: 0;
+	color: #121725;
+	font-family: chivo;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 28px; 
+	display: block;
+}
+
+.dots {
+	display: none;
+}
+
+.wrongEmail {
+	display: none;
+}
+
+/* tablet version */
+
+@media (min-width: 768px) {
+	body {
+		background-image: url("./assets/tablet/image-host.jpg");
+		background-size: auto;
+		background-position-x: right;
+		background-color: #121725;
+		height: auto;
+		display:flow-root;
+
+	}
+
+	.logoPod {
+		 margin-top: 50px; 
+		 margin-left: 39px;
+	}
+
+	h1 {
+		margin-top: 93px;
+	}
+
+	.heading {
+		display: flex;
+		align-items: normal;
+		font-weight: 100;
+		font-size: 48px;
+		line-height: 56px;
+	}
+
+	p {
+		margin-top: 31px;
+		width: 445px;
+		font-weight: 100;
+		font-size: 18px;
+		line-height: 28px;
+		color: #C2CBE5;
+		text-align:start;
+	}
+
+	.mainDiv {
+		background-color: #121725;
+		width: 635px;
+		margin-top: 152px;
+		margin-left: 39px;
+	}
+
+	.changePlacesforDiv {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.podcastLogoes {
+		grid-row: 2;
+	}
+
+	.buttons {
+		grid-row: 1;
+	}
+		
+	.spotifyLogo, .appleLogo {
+		height: 29px;
+	}
+	
+	.googleLogo {
+		height: 18px;
+	}
+	
+	.pocketLogo {
+		height: 26px;
+	}
+
+	.podcastLogoes {
+		margin-top: 64.5px;
+		width: 536px;
+	}
+	
+	input {
+		margin-top: 40px;
+		width: 427px;
+		height: 56px;
+	}
+	
+	button {
+	    margin-top: 40px;
+		width: 162px;
+		margin-left: -167px;
+	}
+
+	.buttons {
+		display: flex;
+		align-items: center;
+	}
+
+	.dots {
+		display:flow-root;
+		margin-left: 39px;
+		position: fixed;
+		bottom: 0;	
+	}
+	
+	.wrongEmail {
+		position: absolute;
+		margin-top: 120px;
+		margin-left: 32px;
+	}
+
+	.validEmail {
+		position: absolute;
+		margin-top: 120px;
+		margin-left: 32px;
+	}
+}
+
+/* desctop version */
+
+@media (min-width: 1440px) {
+	body {
+		background-image: url("./assets/desktop/image-host.jpg");
+		background-position-y: 130px;
+	}
+
+	.logoPod {
+		 margin-top: 102px; 
+		 margin-left: 165px;
+	}
+
+	h1 {
+		margin-top: 88px;
+	}
+
+	.heading {
+		font-size: 52px;
+		line-height: 62px;
+	}
+
+	p {
+		margin-top: 24px;
+	}
+
+	.mainDiv {
+		width: 723px;
+		margin-top: 103px;
+		margin-left: 165px;
+	}
+
+	.podcastLogoes {
+		margin-top: 64.5px;
+	}
+
+	.dots {
+		display:flow-root;
+		right: 0;
+		position: fixed;
+		bottom: 15vh;	
+	}
+
+	button {
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: #B3FFE2;
+	}
+}
+
+
+
